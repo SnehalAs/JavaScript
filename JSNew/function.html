@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  function add(a,b){
+        //     return a+b; 
+        //  }
+        //  document.write( add(10,56));
+
+        // const add=function(a,b){
+        //     return (a+b);
+        // }
+        // console.log(add(45,89));
+        // const add=function(Fisrstname,lastname){
+        //    let result= (` we are glad to having Mr.${Fisrstname} ${lastname}`);
+        //    return result;
+        // }
+        // console.log(add("Apurv","Snehal"));
+
+
+        function checkResult(marks){
+            if(marks >= 90 && marks <= 100){
+                return "student passed with grade A";
+                
+            }
+            else if(marks >= 80 && marks < 90){
+              return "student passed with grade B";
+            }
+            else if(marks >= 70 && marks < 80){
+                return "student passed with grade C";
+            }
+            else if(marks >= 60 && marks < 70){
+                return "student passed with grade D";
+            }
+            else if(marks >= 50 && marks < 60){
+                return "student passed with grade E";
+            }
+            else if(marks >= 35 && marks < 50){
+                return "student passed with grade F";
+            }
+            else if(marks>=35 && marks<=30){
+                return "student passed with grace";
+            }
+            
+            else{
+                return "student Failed!!!!"
+            }
+        }
+        let studentMarks=parseInt(prompt("Enter Your Marks"));
+        let result=checkResult(studentMarks);
+        console.log(result);
+
+
+    </script>
+</body>
+</html>

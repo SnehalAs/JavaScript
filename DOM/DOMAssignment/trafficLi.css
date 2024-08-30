@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #56ccf2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.traffic-light {
+    display: inline-block;
+    width: 80px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.light {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.red.on {
+    background-color: red;
+}
+
+.yellow.on {
+    background-color: yellow;
+}
+
+.green.on {
+    background-color: green;
+}

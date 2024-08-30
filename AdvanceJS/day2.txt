@@ -1,0 +1,63 @@
+//this in object method 
+
+ let car = {
+      color: "White",
+      brand: "Audi",
+      start : function (){
+         console.log(this);
+      }
+    //OR
+    start: () => {
+        console.log(this);
+    }
+};
+ car.start();
+
+ const myFunction = () => {
+     console.log(this);
+ }
+ myFunction();
+
+
+ factory function
+ function newCar(brand,color){
+     return{
+         brand,
+         color,
+         start(){
+             console.log("Car is Running");
+         }
+     }
+ }
+ console.log(newCar("Audi","Black"));
+
+ Constructor Function
+
+ function MyCar(brand,color){
+     this.brand= brand;
+     this.color= color;
+      this.start= function(){
+          console.log("Car is Running.....");
+      }
+     this.start= function(){
+        console.log(`${this.brand} is running...`);
+     }
+
+ }
+
+ let car1 = new  MyCar("Audi","Aqua");
+ let car2 = new  MyCar("Thar","Gray");
+ console.log(car1);
+ console.log(car2);
+ car1.start();
+
+//Prototypal Inheritance
+
+let myArray = [1,2,3,4];
+
+let myarr1 = new Array(1,2,3,4);
+
+console.log(myArray,myarr1);
+console.log(Array.prototype);
+console.log(Object.getPrototypeOf(myArray));
+console.log(Object.getPrototypeOf(myarr1));

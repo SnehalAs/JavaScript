@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <Script>
+
+
+// Local Scope (Own Scope )
+//Outer Function Scope
+// Global Scope
+
+function parent(){
+    document.write(a,b,c);
+    function child(){
+        let a=78 , b=45, c=76;
+    document.write(a,b,c);
+    }
+    child();
+ }
+ parent();
+
+
+ document.write(a,b,c)
+    </Script>
+    
+
+
+
+
+</body>
+</html>

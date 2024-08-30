@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //no para 
+let a= () => {
+
+        document.write("hello")
+      }
+      a();
+
+//one para
+      let b=(s) =>{
+        document.write(++s);
+      }
+      b(6);
+
+      // more than one para
+
+      let m=(e,o,p) =>{
+        document.write(e*o*p);
+      }
+      m(3,8,1)
+
+      //default para
+       
+      let d =(w,r,u=9) =>{
+        document.write(w+r+u);
+      }
+       d(8,5);
+
+       //rest para
+       let g=(l,...args)=>{
+        document.write(l - args);
+       }
+      g(50 ,30);
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

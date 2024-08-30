@@ -1,0 +1,31 @@
+let resultEl = document.getElementById("result");
+
+let checkNumberEl = document.getElementById("checkNumber");
+let randomNumber=0;
+
+function onReset(){
+
+    randomNumber = Math.ceil(Math.random()*100);
+    console.log(randomNumber); 
+    resultEl.textContent = "";
+
+}
+onReset();
+function onShowResult(){
+    let guessedNum = parseInt(checkNumberEl.value);
+
+    if(randomNumber===guessedNum){
+        resultEl.textContent = "Hurray!!! You Guessed it Right Number."
+        
+    }
+    else if(guessedNum < randomNumber){
+         resultEl.textContent = "Too Low Please Try Again!!!."
+   
+
+    }
+    else if(guessedNum > randomNumber){
+         resultEl.textContent = "Too High Please Try Again!!!."
+        
+    }
+    checkNumberEl.value = "";
+}

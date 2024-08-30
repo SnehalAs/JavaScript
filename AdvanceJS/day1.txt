@@ -1,0 +1,91 @@
+1.Spread Operators
+Spread Operator with Arrays
+
+ let arr1 = [2,3,4];
+ let arr2 = [1,...arr1,5];
+
+console.log(arr2);
+
+ Creating copy
+
+ let arr1= [1,2,3];
+ let arr2 =[...arr1];
+ console.log(arr2);
+
+ Concatination 
+ let arr1= [1,2,3];
+ let arr2= [4,5,6];
+ let arr3= [...arr1,...arr2];
+ console.log(arr3);
+
+Concatination with Obects
+
+ let arr1 = {name:"Snehal" , age:26}
+
+ let arr2 = {city:"Nagpur" ,...arr1, domain: "Engineer"}
+
+
+  console.log(arr2);
+
+
+ Spread Operator With Function Calls
+
+function addnum(a,b,c){
+     return a+b+c;
+ }
+ let arr1= [1,2,3,4,5];
+ console.log(addnum(...arr1));
+
+OR
+
+ function addnum(a){
+     return a;
+ }
+ let arr1= [1,2,3,4,5];
+ console.log(addnum(...arr1));
+
+2.Rest Parameters
+
+ function numbers(...args){
+     console.log(args);
+ }
+ numbers(3,5,8)
+
+Destructuring
+1. With Arrays
+ let [a,b,...rest]= [1,2,3,4,5];
+
+ console.log(rest);
+ console.log(a);
+ console.log(b);
+
+2. With Objects
+
+ let {Firstname,...rest}={
+     Firstname:"Snehal",
+     surname: "Tembhurne",
+     age:26
+
+
+ };
+ console.log(Firstname);
+ console.log(rest); 
+Note: The Rest parameter should be the last parameter.
+
+3.Ternary Operator
+
+false ? console.log("Conditiontrue") : console.log("Conditionfalse");
+34<89 ? console.log("Conditiontrue") : console.log("Conditionfalse");
+
+Difference between Spread and Rest Parameter 
+
+Spread
+ let = [...args];===> ...args gives as a function parameter  and its unpack an individual parameter
+
+Rest
+function sneh(...args) {
+
+} =====> ...args gives as a function argument  and its pack the parameter
+
+
+

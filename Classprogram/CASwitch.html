@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <Script>
+    let marks=prompt("Enter the Marks");
+    switch (true) {
+        case (marks >= 90 && marks <= 100):
+           document.write("GRADE A");
+            break;
+        case (marks >= 80 && marks < 90):
+        document.write("GRADE B");
+            break;
+        case (marks >= 70 && marks < 80):
+        document.write("GRADE C");
+            break;
+        case (marks >= 60 && marks < 70):
+        document.write("GRADE D");
+            break;
+        case (marks >= 50 && marks < 60):
+        document.write("GRADE E");
+            break;
+        case (marks >= 0 && marks < 50):
+        document.write("GRADE F");
+            break;
+        default:
+            grade = 'Invalid marks';
+    }
+ </Script> 
+</body>
+</html>

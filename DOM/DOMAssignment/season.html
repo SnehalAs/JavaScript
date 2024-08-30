@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons Switcher</title>
+    <link rel="stylesheet" href="season.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Seasons Switcher</h1>
+        <div class="season-display">
+            <img id="season-image" src="spring.jpg" alt="Season Image">
+            
+        </div>
+        <div class="controls">
+            <button onclick="changeSeason('spring')">Spring</button>
+            <button onclick="changeSeason('summer')">Summer</button>
+            <button onclick="changeSeason('fall')">Fall</button>
+            <button onclick="changeSeason('winter')">Winter</button>
+
+        </div>
+        <p id="season-description">It's Spring!</p>
+    </div>
+    <script src="season.js"></script>
+</body>
+</html>

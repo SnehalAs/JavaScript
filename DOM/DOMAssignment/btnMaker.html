@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Maker</title>
+    <link rel="stylesheet" href="btnMaker.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Button Maker</h1>
+        <div class="controls">
+            <label for="backgroundColor">Background Color:</label>
+            <input type="text" id="backgroundColor" placeholder="e.g: #007bff">
+
+            <label for="fontColor">Font Color:</label>
+            <input type="text" id="fontColor" placeholder="e.g: #ffffff">
+
+            <label for="fontSize">Font Size (px):</label>
+            <input type="number" id="fontSize" placeholder="e.g: 16">
+
+            <label for="fontWeight">Font Weight:</label>
+            <input type="number" id="fontWeight" placeholder="e.g: 700">
+
+            <label for="padding">Padding (px):</label>
+            <input type="number" id="padding" placeholder="e.g: 10">
+
+            <label for="border">Border (px):</label>
+            <input type="number" id="border" placeholder="e.g: 2">
+
+            <button id="applyButton">Apply</button>
+        </div>
+        <div class="button-preview">
+            <button id="customButton">Custom Button</button>
+        </div>
+    </div>
+    <script src="btnMaker.js"></script>
+</body>
+</html>

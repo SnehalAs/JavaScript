@@ -1,0 +1,112 @@
+ Adding a method to the Prototype
+
+ function Person(firstname,lastname){
+     this.firstname = firstname;
+    this.lastname = lastname;
+ }
+
+ Person.prototype.displayFullname = function(){
+     return this.firstname + " " + this.lastname;
+ };
+
+ let person1 = new Person("Snehal" , "Tembhurne");
+ let person2 = new Person("Apurv" , "Jambhulkar");
+
+ console.log(person1,person2);
+
+
+//OR
+ function Car(brand,color){
+     this.brand = brand ;
+     this.color = color ;
+
+ }
+ Car.prototype.start = function(){
+     return this.brand + " looks beautiful in " + this.color;
+ };
+ let car1 = new Car("Audi" , "White");
+ console.log(car1.start());
+
+// Classes
+
+ class Person{
+     constructor(firstName,lastName){         this.firstName = firstName;
+         this.lastName = lastName;
+     }
+     displayFullname(){
+     return this.firstName + " " + this.lastName; 
+
+     }
+     recordBreak(){
+         return this.firstName + "  " + "Breaks Many Record";
+     }
+ }
+
+ let person1 = new Person("Snehal", "Tembhurne");
+ console.log(person1.displayFullname());
+ console.log(person1.recordBreak());
+ let person2 = new Person("Apurv", "Jambhulkar");
+ console.log(person2.displayFullname());
+ console.log(person2.recordBreak());
+
+//Proyotype Property of class
+
+ class Person{
+     constructor(firstName,lastName){
+        this.firstName = firstName;
+         this.lastName = lastName;
+     }
+     displayFullname(){
+     return this.firstName + " " + this.lastName; 
+
+     }
+     recordBreak(){
+         return this.firstName + "  " + "Breaks Many Record";
+     }
+ }
+
+ let person1 = new Person("Snehal", "Tembhurne");
+ console.log(Person.prototype);
+ console.log(Object.getPrototypeOf(person1));
+
+// Inheritance in js classes
+
+//SuperClass
+
+ class Suresh_Tembhurne{
+     constructor(name){
+         this.name = name;
+        
+     }
+     surname(){
+         return `${this.name} Tembhurne...`
+     }
+
+     town(){
+         return `${this.name} Mundipar...`
+     }
+ }
+ //SubClass
+
+ class Sima_Tembhurne extends Suresh_Tembhurne{
+     constructor(daughter_name,son_name){
+         super(daughter_name);
+         this.son_name = son_name;
+     }
+    dance(){
+        return `${this.son_name} Tembhurne...`
+     }
+
+     eat(){
+        return`${this.name} Tembhurne....`
+     }
+  town(){
+         return `${this.name} Mundipar/Sindipar...`
+     }
+ }
+ let Sima_Tembhurne1 = new Sima_Tembhurne("Snehal", " Vivek");
+ console.log(Sima_Tembhurne1.dance());
+ console.log(Sima_Tembhurne1.eat());
+ console.log(Sima_Tembhurne1.surname());
+ console.log(Sima_Tembhurne1.town());
+

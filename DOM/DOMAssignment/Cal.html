@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<link rel="stylesheet" href="Cal.css">
+</head>
+<body>
+<div class="container">
+  <h1>Calculator</h1>
+  
+  <div class="calculator">
+    <img src="Calculation.jpg" alt="Calculator" class="calculator-image">
+    <div class="operation">
+      <input type="number" id="operand1" placeholder="Enter number">
+      <span> + </span>
+      <input type="number" id="operand2" placeholder="Enter number">
+      <span></span>
+      <button id="calculate-btn">Calculate</button>
+    </div>
+    
+    <div id="result" class="result hidden"></div>
+    
+    <div class="buttons">
+      <button id="check-btn">Check</button>
+      <button id="restart-btn">Restart</button>
+    </div>
+  </div>
+</div>
+<script src="Cal.js"></script>
+</body>
+</html>

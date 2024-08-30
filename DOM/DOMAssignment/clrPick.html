@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="clrPick.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Picker</h1>
+        <div class="color-box" id="color1" style="background-color: #e0e0e0;" onclick="changeColor('#e0e0e0')">#e0e0e0</div>
+        <div class="color-box" id="color2" style="background-color: #6fcf97;" onclick="changeColor('#6fcf97')">#6fcf97</div>
+        <div class="color-box" id="color3" style="background-color: #56ccf2;" onclick="changeColor('#56ccf2')">#56ccf2</div>
+        <div class="color-box" id="color4" style="background-color: #bb6bd9;" onclick="changeColor('#bb6bd9')">#bb6bd9</div>
+        
+        
+    </div>
+    <div class="color-display">
+        Background Color : <span id="color-code">#ffffff</span>
+    </div>
+    <p>Try clicking on one of the colors above to change the background color of this page!</p>
+    <script src="clrPick.js"></script>
+</body>
+</html>
